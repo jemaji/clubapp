@@ -2,5 +2,19 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:storybook/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "app/**/*.js"
+      ],
+      "rules": {
+        "quotes": [
+          2,
+          "single"
+        ]
+      },
+      "excludedFiles": "*.test.js"
+    }
   ]
 }

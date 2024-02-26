@@ -8,8 +8,7 @@ interface LandingPageProps {
 export const LandingPage = ({
   data,
 }: LandingPageProps
-) => {
-  console.log(data);
+): JSX.Element => {
   return <>
     <div className="container mx-auto grid grid-cols-1 divide-y divide-blue-100">
       <h1>{data.title}</h1>
